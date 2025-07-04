@@ -4,16 +4,6 @@
 #include <string.h>
 
 /*
-  The term "virtual" comes from the idea that the function call is virtualized - meaning 
-  there's a layer of indirection between the call site and the actual function that executes.
-
-
-  In dynamic dispatch, each object has a dispatch table (also known as a vtable in some languages) 
-  that maps method signatures to the actual method implementations.
-
-  When you call a method on an object, the runtime looks up the method in the object’s dispatch table
-  and then calls the implementation.
-
   Objective-C primarily uses dynamic dispatch for method calls due to its roots in the dynamic 
   runtime of Smalltalk. Dynamic dispatch means that the actual method to be executed is determined 
   at runtime based on the object’s class. This runtime decision-making allows for a high degree of 
